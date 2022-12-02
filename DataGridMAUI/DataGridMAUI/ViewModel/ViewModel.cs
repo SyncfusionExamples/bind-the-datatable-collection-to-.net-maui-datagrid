@@ -13,14 +13,13 @@ namespace DataGridMAUI
 
         public ViewModel()
         {
-            EmployeeCollection = GetDataTable();
+            this.CreateDataTable();
         }
 
         /// <summary>
         /// Create the DataTable
         /// </summary>
-        /// <returns>Data Table</returns>
-        private DataTable GetDataTable()
+        private void CreateDataTable()
         {
             EmployeeCollection = new DataTable();
             EmployeeCollection.Columns.Add("CustomerID", typeof(string));
@@ -47,7 +46,6 @@ namespace DataGridMAUI
             EmployeeCollection.Rows.Add("DUMON", "Dumonde Entier", "Janine Labrune", "Nantes");
             EmployeeCollection.Rows.Add("EASTC", "Eastern Connection", "Ann Devon", "London");
             EmployeeCollection.Rows.Add("ERNSH", "Ernst Handel", "Roland Mendel", "Graz");
-            return EmployeeCollection;
         }
     }
 }
