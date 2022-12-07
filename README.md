@@ -1,6 +1,6 @@
 # bind-the-datatable-collection-to-.net-maui-datagrid
 
-The .NET MAUI [SfDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html) allows to bind [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-6.0) as [ItemsSource] (https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_ItemsSource). SfDataGrid automatically refresh the UI when binding DataTable as ItemSource when rows are added, deleted or cleared.
+The .NET MAUI [SfDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html) allows to bind [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-6.0) as [ItemsSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_ItemsSource). SfDataGrid automatically refresh the UI when binding DataTable as ItemsSource when rows are added, deleted or cleared.
 
 ## C#
 Populate Items to the DataTable.
