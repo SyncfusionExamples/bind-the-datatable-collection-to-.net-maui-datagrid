@@ -22,9 +22,9 @@ namespace DataGridMAUI
         private void CreateDataTable()
         {
             EmployeeCollection = new DataTable();
-            EmployeeCollection.Columns.Add("CustomerID", typeof(string));
+            EmployeeCollection.Columns.Add("ID", typeof(string));
             EmployeeCollection.Columns.Add("Company", typeof(string));
-            EmployeeCollection.Columns.Add("ContactName", typeof(string));
+            EmployeeCollection.Columns.Add("Name", typeof(string));
             EmployeeCollection.Columns.Add("City", typeof(string));
             EmployeeCollection.Rows.Add("ALFKI", "Alferds Futterkiste", "Maria Anders", "Berlin");
             EmployeeCollection.Rows.Add("ANATR", "Ana Trujilo Emparedados y Hela", "Ana Trujilo", "Mexico D.F.");
