@@ -1,20 +1,25 @@
-# bind-the-datatable-collection-to-.net-maui-datagrid
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-The [.NET MAUI DataGrid](https://www.syncfusion.com/maui-controls/maui-datagrid)(SfDataGrid) allows to bind [DataTable](https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-6.0) as [ItemsSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_ItemsSource). DataGrid automatically refresh the UI when binding DataTable as ItemsSource when rows are added, deleted or cleared.
-
-## C#
-Populate Items to the DataTable.
-
-```C#
-public class ViewModel
+namespace DataGridMAUI
 {
+    public class ViewModel
+    {
         public DataTable EmployeeCollection { get; set; }
 
         public ViewModel()
-        { 
+        {
             this.CreateDataTable();
         }
-        private void CreateDataTable ()
+
+        /// <summary>
+        /// Create the DataTable
+        /// </summary>
+        private void CreateDataTable()
         {
             EmployeeCollection = new DataTable();
             EmployeeCollection.Columns.Add("ID", typeof(string));
@@ -42,19 +47,5 @@ public class ViewModel
             EmployeeCollection.Rows.Add("EASTC", "Eastern Connection", "Ann Devon", "London");
             EmployeeCollection.Rows.Add("ERNSH", "Ernst Handel", "Roland Mendel", "Graz");
         }
+    }
 }
-
-```
-
-## XAML
-Bind the ViewModel collection to the ItemsSource property.
-
-```XAML
-<syncfusion:SfDataGrid x:Name="dataGrid"
-                       ItemsSource="{Binding EmployeeCollection}" 
-                       DefaultColumnWidth="130"
-                       GridLinesVisibility="Both"
-                       HeaderGridLinesVisibility="Both">
-</syncfusion:SfDataGrid>
-
-```
